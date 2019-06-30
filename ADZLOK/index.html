@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--------------------------------------------Add Links start------------------------------------------------>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="CSS/Home.css">
+<!--------------------------------------------Add Links end------------------------------------------------>
+  <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+      $("#footer").load("footer.html"); 
+    });
+    
+  </script> 
+</head>
+<!--------------------------------------------Body start------------------------------------------>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<div id="header"></div>
+<!----------------------------------------Carousel  Add search------------------------------------------------------------->
+<div id="myCarousel" class="carousel slide">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/ad1.jpg">
+      <div class="container">
+        <div class="carousel-caption">
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/ad2.jpg">
+      <div class="container">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/ad3.jpg">
+      <div class="container">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+  
+  <div class="col-sm-12  searchform" id="searchForm">
+    <div class="col-sm-8 col-sm-offset-2">
+    
+          <form class="form-inline" action="" id="search"> 
+            <input type="text"  class="form-control" id="textsearch" style="font-size:14pt;" placeholder="Search for">
+            <input type="text"  class="form-control" id="textlocate"  style="font-size:14pt;" placeholder="Located in">
+            <input type="text"  class="form-control" id="textcategory" style="font-size:14pt;" placeholder="In Category">   
+            <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="searchbutton">
+                <span class="glyphicon glyphicon-search" style="width:20px;margin-top:14px ;color:white"></span> Search
+          </button>
+          </form>
+    
+    </div>
+  </div>
+  
+  
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <i class="glyphicon glyphicon-chevron-left"></i>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <i class="glyphicon glyphicon-chevron-right"></i>
+  </a>  
+</div>
+<!-- /.carousel -->
+
+
+
+<!--------------------------------------------Add search end------------------------------------------>
+<!--------------------------------------------Add 3 card components start------------------------------------------>
+<div class="container-fluid">
+
+<!---------------------------------Advertiser------------------------------->
+<div class="col-md-4">
+<div class="demo-card-wide mdl-card mdl-shadow--4dp">
+  <div class="mdl-card__title Advertiser">
+    <h2 class="mdl-card__title-text">Advertiser</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+      An advertiser is the one who pays the money to get his advertisements shown<a href=""> more...</a>
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+      <div id="main">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" data-toggle="collapse" href="#collapse1">
+            Get Started
+        </a>
+      </div>
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">share</i>
+    </button>
+  </div>
+</div>
+</div>
+<!---------------------------------Publisher------------------------------->
+<div class="col-md-4">
+<div class="demo-card-wide mdl-card mdl-shadow--4dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Publisher</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+      Publisher is the one who gets money for showing the ads on his site
+      <a href="">more...</a>
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" data-toggle="collapse" href="#collapse2">
+      Get Started
+    </a>
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">share</i>
+    </button>
+  </div>
+</div>
+</div>
+<!--------------------------------Influncer------------------------------->
+<div class="col-md-4">
+<div class="demo-card-wide mdl-card mdl-shadow--4dp">
+  <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Influencer</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+      The influencer is the individual whose effect on the purchase decision is in some way significant. <a href="">more...</a>
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" data-toggle="collapse" href="#collapse3">
+      Get Started
+    </a>
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">share</i>
+    </button>
+  </div>
+</div>
+</div>
+    
+</div>
+<!--------------------------------------------Add 3 card components end------------------------------------------>
+<!---------------------------------------Adding options of card component-------------------------------------->
+<div class="col-md-12">
+    <div class="col-md-4">  
+ <div id="collapse1" class="panel-collapse collapse">
+     <div class="panel-body">
+         <table class="advisertable" cellpadding="10">
+           <tr>
+                 <td cellpadding="10"><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+             <tr>
+                  <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+             <tr>
+                  <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+             <tr>
+                  <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+              <tr>
+                  <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+              <tr>
+                  <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+              <tr>
+                  <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+         </table>
+     </div>
+      <div class="panel-footer">Adviser</div>
+ </div>
+     
+</div>
+    
+<div class="col-md-4">    
+<div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">
+      <table class="publishertable">
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+             <tr>
+                  <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+             <tr>
+                  <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+             <tr>
+                  <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+              <tr>
+                  <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+              <tr>
+                  <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+              <tr>
+                  <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+         </table>
+      </div>
+      <div class="panel-footer">Publisher</div>
+ </div>
+</div>
+
+<div class="col-md-4">    
+<div id="collapse3" class="panel-collapse collapse">
+    <div class="panel-body">
+        <table class="influencertable">
+            <tr>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+             <tr>
+                  <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+             <tr>
+                  <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+             <tr>
+                  <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+              <tr>
+                  <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+              <tr>
+                  <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+              <tr>
+                  <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+                 <td><img src="images/popup/video.png" width="60px"></td>
+             </tr>
+         </table>
+        
+    </div>
+      <div class="panel-footer">Influencer</div>
+ </div>
+</div>
+</div>
+<!--------------------------------------Adding options of card component---------------------------------------->
+<!------------------------------------------services---------------------------------------------------------->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+        <img src="images/auction.png" width="80">
+      <h4>Participate in auctions</h4>
+      <p>Description in short</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="images/advertising.png" width="80">
+      <h4>Submit your ads</h4>
+      <p>Description in short</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="images/promotion.png" width="80">
+      <h4>Promote your ads</h4>
+      <p>Description in short</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <img src="images/stars.png" width="80">
+      <h4>Get reviewed to become noticeable</h4>
+      <p>Description in short</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="images/bookmarks.png" width="80">
+      <h4>Save favorite ads</h4>
+      <p>Description in short</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="images/three-dots.png" width="80">
+      <h4 style="color:#303030;">And more</h4>
+      <p>Description in short</p>
+    </div>
+  </div>
+</div>
+
+<!------------------------------------------services end------------------------------------------------------>
+
+<!------------------------------------------------video play start-------------------------------------------------->
+<video autoplay muted loop id="myVideo">
+  <source src="video/car.mp4" type="video/mp4">
+  <button  onclick="myFunction()">Pause</button>
+</video>
+
+<!------------------------------------------------video play end----------------------------------------------------> 
+<!--------------------------------------------Footer start------------------------------------------>
+ <div id="footer"></div>
+<!--------------------------------------------Footer end------------------------------------------>
+ <script src="js/Home.js"></script> 
+</body>
+<!--------------------------------------------Body end------------------------------------------>
+</html>
